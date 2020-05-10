@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Matt Jennings"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profilepic.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data science, visualization and machine learning."
   location         : "Oxford, UK"
   email            :
@@ -279,6 +279,7 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
   - scope:
       path: ""
       type: pages
