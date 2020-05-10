@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-UK"
+locale                   : "en-US"
 title                    : "Matt Jennings Projects"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -279,10 +279,3 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _pages
-  - scope:
-    path: ""
-    type: pages
-    values:
-      layout: single
-      author_profile: true
