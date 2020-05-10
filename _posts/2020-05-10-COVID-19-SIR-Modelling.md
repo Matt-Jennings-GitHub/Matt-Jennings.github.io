@@ -3,7 +3,7 @@ title: "COVID-19 SIRf Modelling"
 date: 2020-05-10
 tags: [modelling, data science]
 header:
-  image: "/images/SIRf-Model/SIRf-Model.jpg"
+  image: "/images/SIRf-Model/SIRf-Model.png"
 excerpt: "Statistical Modelling"
 mathjax: true
 ---
@@ -38,7 +38,7 @@ Heres some inline code: 'x+y'
 <img src="{{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.jpg" alt="SIRf Model Predictions">
 
 Here's another image using Kramdown:
-![alt]({{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.jpg)
+![alt]({{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.png)
 
 Here's some math:
 
