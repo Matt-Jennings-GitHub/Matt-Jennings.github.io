@@ -1,20 +1,21 @@
 ---
-title: "COVID-19 SIRf Modelling"
+title: "COVID-19 SIRf Modelling2"
 date: 2020-05-10
 tags: [modelling, data science]
 header:
   image: "/images/SIRf-Model/SIRf-Model.png"
+  teaser: "/images/SIRf-Model/SIRf-Model.png"
 excerpt: "Statistical Modelling"
 mathjax: true
 ---
 
-# H1 Heading
+# H1 Heading2
 
-## H2 Heading
+## H2 Heading2
 
-### H£ Heading
+### H£ Heading2
 
-Basic text.
+Basic text2.
 
 *italics* and **bold**
 

@@ -4,6 +4,7 @@ date: 2020-05-10
 tags: [modelling, data science]
 header:
   image: "/images/SIRf-Model/SIRf-Model.png"
+  teaser: "/images/SIRf-Model/SIRf-Model.png"
 excerpt: "Statistical Modelling"
 mathjax: true
 ---

@@ -112,8 +112,8 @@ author:
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
-      icon: "https://github.com/Matt-Jennings-GitHub"
-      # url: "https://github.com/"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Matt-Jennings-GitHub"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -265,9 +265,22 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
   # _posts
   - scope:
       path: ""
