@@ -3,7 +3,7 @@ title: "COVID-19 SIRf Modelling"
 date: 2020-05-10
 tags: [modelling, data science]
 header:
-  image: "/images/SIRf-Model/SIRf-Model.png"
+  image: "/images/skyline.jpg"
   teaser: "/images/SIRf-Model/SIRf-Model.png"
 excerpt: "Statistical Modelling"
 mathjax: true
