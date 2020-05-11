@@ -4,45 +4,23 @@ date: 2020-05-10
 tags: [modelling, data science]
 header:
   image: "/images/SIRf-Model/SIRf-Model.png"
-  teaser: "/images/SIRf-Model/SIRf-Model.png"
+  teaser: "/images/skyline.jpg"
 excerpt: "Statistical Modelling"
 mathjax: true
 ---
 
-# H1 Heading
+Implementation of Oxford's Susceptible-Infectious-Recovered framework (SIRf) Coronavirus (CV19) tracking model. Uses SciPy's ODE integrator to integrate a set of coupled linear first order ODEs with adjustable population parameters. Includes option to modify the effective reproductive number ('R') of the virus to see the effect of lock-down measures.
 
-## H2 Heading
 
-### H£ Heading
-
-Basic text.
-
-*italics* and **bold**
-
-hyperlinks [link](https://google.com/)
-
-bulleted list:
--First
-
-Numbered list:
-1. First
-
-Python code block:
-```python
-    import numpy as np
-    def test(x):
-      return x*2
-```
-
-Heres some inline code: 'x+y'
+## H2 Sample Output
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.png" alt="SIRf Model Predictions">
 
-Here's another image using Kramdown:
-![alt]({{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.png)
+Predictions are made with the following set of coupled ODEs:
 
-Here's some math:
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
 
-$$z=x+y$$
-
-You can also put it inline $$z=x+y$$
+```python
+# Integrate the model with SciPi ODE Integrator
+xt = odeint(SIRf, x0, t, args=(b, T))
+```
