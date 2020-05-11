@@ -1,5 +1,5 @@
 ---
-title: "COVID-19 SIRf Modelling2"
+title: "Sample Project"
 date: 2020-05-10
 tags: [modelling, data science]
 header:
