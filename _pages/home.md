@@ -1,0 +1,15 @@
+---
+title: "Projects"
+permalink: /
+layout: collection
+collection: portfolio
+classes: wide
+entries_layout: grid
+author_profile: true
+header:
+  image: "/images/skyline.jpg"
+---
+
+# H1 Heading
+
+Basic text.
