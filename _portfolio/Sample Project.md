@@ -22,7 +22,7 @@ Basic text2.
 hyperlinks [link](https://google.com/)
 
 bulleted list:
--First
+- First
 
 Numbered list:
 1. First

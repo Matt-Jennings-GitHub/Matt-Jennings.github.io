@@ -18,8 +18,8 @@ Data sourced live from the [ECDC](https://www.ecdc.europa.eu/en/geographical-dis
 
 ## Visualising Data
 
-To most clearly present the impact of the statistics, I used a 2D colour matrix to convey both daily death and total case data, with economic data superimposed ontop.
+To most clearly present the geographic significance of the statistics, I used a 2D colour matrix to convey both daily death and total case data, with economic data superimposed ontop.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusDataVisualisation/Coronavirus1.png" alt="Genetic Evolution>
+<img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusDataVisualisation/Coronavirus1.png" alt="Global Data Visualisation">
 
 More details of the project can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).

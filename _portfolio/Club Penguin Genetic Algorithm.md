@@ -22,6 +22,6 @@ Neural Networks are an incredibly powerful machine-learning technique which can 
 
 The network was evolved over 3 hours of genetic evolution with reinforcement learning, placing the agent in a test environment implimented in PyGame.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/ClubPenguin/clubpenguin2.jpg" alt="Genetic Evolution>
+<img src="{{ site.url }}{{ site.baseurl }}/images/ClubPenguin/clubpenguin2.jpg" alt="Genetic Evolution">
 
 More details of the algorithm specifics can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
