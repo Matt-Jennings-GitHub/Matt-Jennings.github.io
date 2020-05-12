@@ -16,7 +16,7 @@ Implementation of Oxford's Susceptible-Infectious-Recovered framework (SIRf) Cor
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.png" alt="SIRf Model Predictions">
 
-Predictions are made with the following set of coupled ODEs:
+Predictions are made with the following set of coupled ODEs,
 
 $$\frac{dy}{dz} = by(1-z) - \frac{y}{T}$$
 
@@ -24,7 +24,7 @@ $$\frac{dz}{dt} = by(1-z)$$
 
 $$D = NPaz(t-1)$$
 
-Where $$b = \frac{R}{T}$$
+where $$b = \frac{R}{T}$$ .
 
 These are integrated with the SciPi ODE Integrator:
 
