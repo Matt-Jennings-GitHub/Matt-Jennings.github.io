@@ -48,4 +48,4 @@ Parameters:
 - *p*  Proportion of population at risk of severe disease 
 - *N*  Size of population
 
-See source code on my [GitHub](https://github.com/Matt-Jennings-GitHub).
+See source code on my [GitHub](https://github.com/Matt-Jennings-GitHub) for parameter values used.
