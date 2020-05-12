@@ -5,7 +5,7 @@ tags: [modelling, data science]
 header:
   image: "/images/skyline.jpg"
   teaser: "/images/ClubPenguin/ClubPenguinTh.jpg"
-excerpt: "Machine Learning, Genetic Algorithm"
+excerpt: "Machine Learning, Neural Network"
 mathjax: true
 ---
 
