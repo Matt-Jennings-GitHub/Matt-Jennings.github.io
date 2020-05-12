@@ -24,7 +24,7 @@ $$\frac{dz}{dt} = by(1-z)$$
 
 $$D = NPaz(t-1)$$
 
-Where $b = \frac{R}{T}$.
+Where $$b = \frac{R}{T}$$
 
 These are integrated with the SciPi ODE Integrator:
 
@@ -37,7 +37,7 @@ xt = odeint(SIRf, x0, t, args=(b, T))
 
 Parameters:
 - *y(t)*  Proportion of population who are infectious
-- *z(t)* Proportion of initial population no longer susceptible to infection (dead, infected, recovered)
+- *z(t)* Proportion of initial population no longer susceptible to infection (dead, infected or recovered)
 - *D(t)*  Total deaths
 - *t*  Time since outbreak began
 - **R**  Basic reproduction number 
