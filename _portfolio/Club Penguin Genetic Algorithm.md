@@ -4,7 +4,7 @@ date: 2019-09-01
 tags: [modelling, data science]
 header:
   image: "/images/skyline.jpg"
-  teaser: "/images/ClubPenguin/clubpenguin1.jpg"
+  teaser: "/images/ClubPenguin/ClubPenguinTh.jpg"
 excerpt: "Machine Learning, Genetic Algorithm"
 mathjax: true
 ---
@@ -24,4 +24,4 @@ The network was evolved over 3 hours of genetic evolution with reinforcement lea
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/ClubPenguin/clubpenguin2.jpg" alt="Genetic Evolution>
 
-More details of the algorithm specifics can be found on my GitHub.
+More details of the algorithm specifics can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).

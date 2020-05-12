@@ -4,7 +4,7 @@ date: 2020-05-10
 tags: [modelling, data science]
 header:
   image: "/images/skyline.jpg"
-  teaser: "/images/SIRf-Model/SIRf-Model.png"
+  teaser: "/images/SIRf-Model/SIRf-ModelTh.jpg"
 excerpt: "Statistical Modelling"
 mathjax: true
 ---
@@ -39,3 +39,7 @@ Parameters:
 -*a*  Probability of dying with severe disease (0.14 ± 0.007)
 -*p*  Proportion of population at risk of severe disease (0.01 or 0.001 ± 50%)
 -*N*  Size of population (67 million)
+
+## List Test
+bulleted list:
+-First
