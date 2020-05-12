@@ -20,6 +20,12 @@ Predictions are made with the following set of coupled ODEs:
 
 $$\frac{dy}{dz} = by(1-z) - \frac{y}{T}$$
 
+$$\frac{dz}{dt} = by(1-z)$$
+
+$$D = NPaz(t-1)$$
+
+Where $b = \frac{R}{T}$.
+
 These are integrated with the SciPi ODE Integrator:
 
 ```python
@@ -34,14 +40,12 @@ Parameters:
 - *z(t)* Proportion of initial population no longer susceptible to infection (dead, infected, recovered)
 - *D(t)*  Total deaths
 - *t*  Time since outbreak began
-- **R**  Basic reproduction number (2.25 or 2.75 ± 0.025)
-- *T*  Average infectious period (4.5 ± 1 days)
+- **R**  Basic reproduction number 
+- *T*  Average infectious period 
 - *b*  Average number of people infected by an infectious individual per day (R/T)
-- *l*  Average time between infection and death (17 ± 2 days)
-- *a*  Probability of dying with severe disease (0.14 ± 0.007)
-- *p*  Proportion of population at risk of severe disease (0.01 or 0.001 ± 50%)
-- *N*  Size of population (67 million)
+- *l*  Average time between infection and death 
+- *a*  Probability of dying with severe disease 
+- *p*  Proportion of population at risk of severe disease 
+- *N*  Size of population
 
-## List Test
-bulleted list:
--First
+See source code on my [GitHub](https://github.com/Matt-Jennings-GitHub).
