@@ -26,6 +26,8 @@ More details of the project can be found on my [GitHub](https://github.com/Matt-
 
 ## Interactive Example
 
-<iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&year=earliest&region=Europe" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+Below is a similar interactive data visualization from Our World in Data. No economic data is included.
 
-From Our World In Data.
+<iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+
