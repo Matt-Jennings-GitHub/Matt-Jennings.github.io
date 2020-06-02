@@ -39,9 +39,9 @@ model.compile(loss='categorical_crossentropy', optimizer='adam')
 ```
 Here, we use the Keras wrapper for TensorFlow to impliment the sequential network.
 
-The extended network was trained to recognise drinks by examining the 1000 images of each beverage, web-scraped from Google Images. The training images were passed through a preprocessing script, which attempts to filter out image noise and compresses each picture into a 75x75 array, for consistent passes through the network layers. Below is a sample of training data for the Espresso Martini class:
+The extended network was trained to recognise drinks by examining the 1000 images of each beverage, web scraped from Google Images. The training images were passed through a preprocessing script, which attempts to filter out image noise and compresses each picture into a 75x75 array, for consistent passes through the network layers. Below is a sample of training data for the Espresso Martini class:
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/espressomartinis.PNG" alt="Sample Training Data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/EspressoMartinis.PNG" alt="Sample Training Data">
 
 Using the trained network, we can then predict what is present in the image, by assigning a probability to the follwing classes:
 - Beer
@@ -64,6 +64,6 @@ Although web scraping the top 1000 pictures in each class from Google Images is 
 
 As an example, searching for a Martini will also yield many photos of an Espresso Martini, resulting in the miss-classification shown in the demonstration above.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/searchresults.PNG" alt="Martini Google Search Results">
+<img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/SearchResults.PNG" alt="Martini Google Search Results">
 
 Note how many of the google results show espresso martinis instead! The full source code for the image preprocessor and CNN, along with further details, can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
