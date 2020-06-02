@@ -23,3 +23,9 @@ To most clearly present the geographic significance of the statistics, I used a 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusDataVisualisation/Coronavirus1.png" alt="Global Data Visualisation">
 
 More details of the project can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
+
+## Interactive Example
+
+<iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map&year=earliest&region=Europe" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+From Our World In Data.
