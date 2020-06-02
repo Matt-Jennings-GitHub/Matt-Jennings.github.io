@@ -11,7 +11,7 @@ mathjax: true
 
 Using a numerical approximation of the Fourier Transform, we predict the resulting diffraction patterns produced from optical diffraction experiements with various shaped 2D sources in matrix representation.
 
-##Background
+## Background
 
 Optical signals are rarely monochromatic but rather a superposition of characteristic frequencies. These can be expressed as a Fourier Series of sine and cosine functions through the Fourier Series in 2D,
 
