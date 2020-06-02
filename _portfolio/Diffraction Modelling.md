@@ -4,7 +4,7 @@ date: 2020-06-02
 tags: [physics, optics, numcerical modelling]
 header:
   image: "/images/skyline.jpg"
-  teaser: "/images/DiffractionModelling/DiffractionModellingTh.jpg"
+  teaser: "/images/DiffractionModelling/DiffractionModellingTh.png"
 excerpt: "Optical Phyics, Numerical Modelling"
 mathjax: true
 ---
@@ -21,9 +21,24 @@ This can be numerically discretize with the following compound sum,
 
 $$F\left(u,v\right)=\frac{1}{4NM}\sum_{x=-N}^{N-1}\sum_{x=-M}^{M-1}\left(f\left(x,y\right)e^{-\pi i\left(\frac{xu}{N}+\frac{yv}{M}\right)}\right)$$
 
-Which we impliment in matrix representation with MATLAB and the following nested loop:
 
-```MATLAB
+
+## Sample Output
+
+For a cross-shaped source, we see the expected output matrix displaying regular light diffraction through an aperture.
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/DiffractionModelling/crossedslit.PNG" alt="Cross shaped source diffraction">
+
+For a double slit, we reproduce the same characteristic fringe interference as seen in Young's Experiment, now in 2D.
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/DiffractionModelling/doubleslit.PNG" alt="Double slit diffraction">
+
+
+This application of the Discrete Fourier Transform demonstrates the effectiveness of numerical modelling in quickly predicting experimental outcomes in optical physics.
+
+The Discrete Fourier Transform is implimented in matrix representation with MATLAB and the following nested loop:
+
+```matlab
 for a = 1:2*N+1 %Iterate over output array rows, index a 
     v = a-(N+1); %Convert output array row index to coordinates in v space
     for b = 1:2*M+1 %Iterate over output array cols, index b 
@@ -35,17 +50,4 @@ for a = 1:2*N+1 %Iterate over output array rows, index a
                 Y(a,b)= Y(a,b) + X(c,d)*exp(-i*pi*((u*x/M) +(v*y/N))); %Compute double summation for output vector elements
 ```
 
-
-
-## Sample Output
-
-For a cross-shaped source, we see the expected output matrix displaying regular light diffraction through an aperture.
-
-<img src="{{ site.url }}{{ site.baseurl }}/images/DiffractionModelling/crossedslit.png" alt="Cross shaped source diffraction">
-
-For a double slit, we reproduce the same characteristic fringe interference as seen in Young's Experiment, now in 2D.
-
-<img src="{{ site.url }}{{ site.baseurl }}/images/DiffractionModelling/doubleslit.png" alt="Double slit diffraction">
-
-
-This application of the Discrete Fourier Transform demonstrates the effectiveness of numerical modelling in quickly predicting experimental outcomes in optical physics. See source code on my [GitHub](https://github.com/Matt-Jennings-GitHub) for further details.
+See source code on my [GitHub](https://github.com/Matt-Jennings-GitHub) for further details.
