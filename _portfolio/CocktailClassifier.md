@@ -15,13 +15,13 @@ A fun app to predict the type of cocktail present in an image, using a convoluti
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/Cocktails.png" alt="Cocktail Classifier App Demonstration">
 
-Based on it's training data, the app assigns a probability to each type of cocktail.
+Based on its training data, the app assigns a probability to each type of cocktail.
 
 ## How it works
 
-We make use of a convolutional neural network, a machine learning model which can very effectivley capture patterns and shapes present in the image pixel data to make a prediction.
+We make use of a convolutional neural network: a deep learning model which can very effectivley capture patterns and shapes present in the image pixel data to make a prediction.
 
-Using transfer learning from the pretrained VGG16 model on the imagenet dataset, an additional dense layer with 256 neurons is added to the network and fed into our output layer with 13 neurons, corresponding to each drink type we seek to classify.
+Transfer learning is used, with our feature selector as the VGG16 model pretrained on the ImageNet dataset. An additional dense layer with 256 neurons is added to the network and fed into our output layer with 13 neurons, each corresponding to a drink type we seek to classify.
 
 ```python
 # Drink Types
@@ -39,7 +39,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam')
 ```
 Here, we use the Keras wrapper for TensorFlow to impliment the sequential network.
 
-The extended network was trained to recognise drinks by examining the 1000 images of each beverage, web scraped from Google Images. The training images were passed through a preprocessing script, which attempts to filter out image noise and compresses each picture into a 75x75 array, for consistent passes through the network layers. Below is a sample of training data for the Espresso Martini class:
+The extended network was trained to recognise drinks by examining the 1000 images of each beverage, web scraped from Google Images. The training images were passed through a preprocessing script, which attempts to filter out image noise before compressing each picture into a 75x75 array, for consistent passes through the network layers. Below is a sample of training data for the Espresso Martini class:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CocktailClassifier/EspressoMartinis.PNG" alt="Sample Training Data">
 
