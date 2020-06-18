@@ -87,4 +87,8 @@ We can now take the information we have extracted from the image and apply the M
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/Output.png" alt="Program Output">
 
-I hope this project has given some insight into some of the techniques that can be used for computer vision, and display a fun application of the Minimax algorithm to board games. Full source code and further details can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
+Testing showed promising generalisation to a variety different images, and the limitations of the approach used can be seen by examining the output at each stage of the process:
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/ExampleCases.png" alt="Example Cases">
+
+I hope this project has given some insight into some of the techniques that can be used for computer vision, and display a fun application of the Minimax algorithm to board games! Full source code and further details can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
