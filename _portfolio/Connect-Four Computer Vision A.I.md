@@ -21,7 +21,9 @@ We use computer vision techniques to identify the presence and state of the game
 
 ## How it works
 
-We make use of a convolutional neural network: a deep learning model which can very effectivley capture patterns and shapes present in the image pixel data to make a prediction.
+# Image Analysis
+
+The first step
 
 Transfer learning is used, with our feature selector as the VGG16 model pretrained on the ImageNet dataset. An additional dense layer with 256 neurons is added to the network and fed into our output layer with 13 neurons, each corresponding to a drink type we seek to classify.
 
