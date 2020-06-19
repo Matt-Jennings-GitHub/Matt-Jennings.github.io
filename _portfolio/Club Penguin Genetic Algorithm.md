@@ -24,4 +24,4 @@ The network was evolved over 3 hours of genetic evolution with reinforcement lea
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/ClubPenguin/clubpenguin2.jpg" alt="Genetic Evolution">
 
-More details of the algorithm specifics can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
+More details of the algorithm specifics are outlined in the video above and can also be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
