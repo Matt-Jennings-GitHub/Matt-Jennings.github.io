@@ -9,9 +9,9 @@ excerpt: "Image Recognition, Neural Network"
 mathjax: true
 ---
 
-A computer vision project to detect the presence of the board game "ConnectFour" ("Four-In-A-Row") from an image, and identify the next player's optimal move. 
+A computer vision project to detect the presence of the board game "ConnectFour" from an image, and identify the next player's optimal move. 
 
-## Demonstration
+# Demonstration
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/ExampleOutput1.png" alt="Example Picture Scan">
 
@@ -19,9 +19,9 @@ A computer vision project to detect the presence of the board game "ConnectFour"
 
 We use computer vision techniques to identify the presence and state of the game-board from an image, then apply a MiniMax algorithm with Alpha-Beta pruning to determine the next best move, and display the result!
 
-## How it works
+# How it works
 
-# Step 1: Image Analysis
+## Step 1: Image Analysis
 
 Various computer vision techniques, using the Python implimentation of CV2 were applied to accomplish the task of identifiying game board and counter positionsfrom a given picture.
 
@@ -31,7 +31,7 @@ We first apply a bilateral filter to reduce noise and smooth the image and assis
 
 Next, we apply the Canny Edge Detection Algorithm which is known to perform well on smoothed images:
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/Edge Detection.png" alt="Canny Edge Detection">
+<img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/EdgeDetection.png" alt="Canny Edge Detection">
 
 We can then use CV2's FindCountours to find contours within the image before aprroximating those which represent polygons with approxPolyDP, noting we expect shapes with a high number of verticies (like our circular counters) to have a low arclength / perimiter ratio.
 
@@ -73,7 +73,7 @@ Finally, we iterate through the grid with the above loop and apply a bitwise AND
 
 Success! We have picked-out the state of the game from a picture, irrespective of the background and off-angles.
 
-# Step 2: Optimal Next Move Prediction
+## Step 2: Optimal Next Move Prediction
 
 Having obtained the state of the grid, we must now identify which player is to move next, and where they should place their counter.
 
@@ -89,6 +89,6 @@ We can now take the information we have extracted from the image and apply the M
 
 Testing showed promising generalisation to a variety different images, and the limitations of the approach used can be seen by examining the output at each stage of the process:
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/ExampleCases.png" alt="Example Cases">
+<img src="{{ site.url }}{{ site.baseurl }}/images/ConnectFour/ExampleCases.jpg" alt="Example Cases">
 
 I hope this project has given some insight into some of the techniques that can be used for computer vision, and display a fun application of the Minimax algorithm to board games! Full source code and further details can be found on my [GitHub](https://github.com/Matt-Jennings-GitHub).
