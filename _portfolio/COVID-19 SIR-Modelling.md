@@ -40,7 +40,7 @@ Parameters:
 - *z(t)* Proportion of initial population no longer susceptible to infection (dead, infected or recovered)
 - *D(t)*  Total deaths
 - *t*  Time since outbreak began
-- **R**  Basic reproduction number 
+- *R*  Basic reproduction number 
 - *T*  Average infectious period 
 - *b*  Average number of people infected by an infectious individual per day (R/T)
 - *l*  Average time between infection and death 
