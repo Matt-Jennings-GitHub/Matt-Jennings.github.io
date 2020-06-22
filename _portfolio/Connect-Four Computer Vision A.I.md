@@ -5,7 +5,7 @@ tags: [computer vision, artificial intelligence]
 header:
   image: "/images/skyline.jpg"
   teaser: "/images/ConnectFour/ConnectFourTh.png"
-excerpt: "Image Recognition, Neural Network"
+excerpt: "Computer Vision, Minimax Algorithm"
 mathjax: true
 ---
 

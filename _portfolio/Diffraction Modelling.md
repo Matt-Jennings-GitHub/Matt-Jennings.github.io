@@ -17,7 +17,7 @@ Optical signals are rarely monochromatic but rather a superposition of character
 
 $$F\left(u,v\right)=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}{f\left(x,y\right)e^{-2\pi i(xu+yv)}}dxdy$$
 
-This can be numerically discretize with the following compound sum,
+This can be numerically discretized with the following compound sum,
 
 $$F\left(u,v\right)=\frac{1}{4NM}\sum_{x=-N}^{N-1}\sum_{x=-M}^{M-1}\left(f\left(x,y\right)e^{-\pi i\left(\frac{xu}{N}+\frac{yv}{M}\right)}\right)$$
 
