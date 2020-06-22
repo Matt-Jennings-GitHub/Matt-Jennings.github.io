@@ -1,7 +1,7 @@
 ---
 title: "Connect-Four Computer Vision A.I"
 date: 2020-06-02
-tags: [computer vision, artificial intelligence]
+tags: [computer vision, minimax, artificial intelligence]
 header:
   image: "/images/skyline.jpg"
   teaser: "/images/ConnectFour/ConnectFourTh.png"
