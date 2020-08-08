@@ -13,7 +13,7 @@ Predicting and understanding the spread of the COVID-19 Pandemic in the USA can 
 
 ## Predictions made
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/PredictionsComparison" alt="Model Predictions">
+<img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/PredictionsComparison.gif" alt="Model Predictions">
 
 ## Calculaing the reproduction number (*R*)
 
