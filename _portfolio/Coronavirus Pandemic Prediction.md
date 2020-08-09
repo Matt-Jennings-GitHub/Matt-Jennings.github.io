@@ -1,6 +1,6 @@
 ---
 title: "Coronavirus Pandemic Prediction"
-date: 2020-08-08
+date: 2020-01-01
 tags: [data science, machine learning, data visualization]
 header:
   image: "/images/skyline.jpg"
