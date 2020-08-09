@@ -4,7 +4,7 @@ date: 2019-09-01
 tags: [modelling, data science]
 header:
   image: "/images/skyline.jpg"
-  teaser: "/images/ClubPenguin/ClubPenguinTh.jpg"
+  teaser: "/images/ClubPenguin/ClubPenguinTh.gif"
 excerpt: "Machine Learning, Neural Network"
 mathjax: true
 ---
