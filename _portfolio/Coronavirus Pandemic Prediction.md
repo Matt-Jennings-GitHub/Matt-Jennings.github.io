@@ -4,7 +4,7 @@ date: 2020-01-01
 tags: [data science, machine learning, data visualization]
 header:
   image: "/images/skyline.jpg"
-  teaser: "/images/CoronavirusPrediction/CoronavirusPredictionTh.jpg"
+  teaser: "/images/CoronavirusPrediction/CoronavirusPredictionTh.gif"
 excerpt: "End-to-end Machine Learning Project"
 mathjax: true
 ---
@@ -19,11 +19,11 @@ The past reproduction number is first calculated using estimates based on the SI
 
 ## Data Visualisation
 
-Visualising numbers is extremley important when tackling data science problems. Here, folium was used to produce an interactive map to aid our analysis:
+Visualising numbers is extremely important when tackling data science problems. Here, folium was used to produce an interactive map to aid our analysis:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/LivemapDemo.gif" alt="Interactive Map Demo">
 
-## Calculaing the reproduction number (*R*)
+## Calculating the reproduction number (*R*)
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/SIRf-Model/SIRf-Model.png" alt="ExampleSIRf Model Predictions">
 
@@ -41,11 +41,11 @@ See my post on [SIRf Modelling](http://mattjennings.ddns.net/portfolio/COVID-19%
 
 ## Data Collection
 
-Geographic, Socioeconomic, Ethnic and Health statistics for each indivual county were collected from public datasets listed [here](https://www.countyhealthrankings.org/). This is a large, unorganised dataset with many missing values and 534 columns! Let's visualise our data with a sparsity matrix to get an overveiw and locate missing values:
+Geographic, Socioeconomic, Ethnic and Health statistics for each indivual county were collected from public datasets listed [here](https://www.countyhealthrankings.org/). This is a large, unorganised dataset with many missing values and 534 columns! Let's visualise our data with a sparsity matrix to get an overview and locate missing values:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/SparseMatrix.jpg" alt="Missing values in our dataset">
 
-We can see missing values are scattered throughout, but we can now use Pandas to selectivley remove and replace values. With some final cleaning, we can extract data for just the factors that we suspect may be interset for further analysis. Factors initially chosen included Obesity, Unemployment, Rurality, Population Density, etc. Here is an example some of the the final cleaned data:
+We can see missing values are scattered throughout, but we can now use Pandas to selectively remove and replace values. With some final cleaning, we can extract data for just the factors that we suspect may be interest for further analysis. Factors initially chosen included Obesity, Unemployment, Rurality, Population Density, etc. Here is an example some of the final cleaned data:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/CleanDataframe.PNG" alt="Cleaned Dataframe">
 
@@ -55,7 +55,7 @@ Now we have clean data, but which of these features actually contribute to the s
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/CorrelationMatrix.png" alt="Correlation Matrix">
 
-This looks overwhelming, but we can now pickout relationships in our data to explore further:
+This looks overwhelming, but we can now pick out relationships in our data to explore further:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/CorrelationMatrix2.jpg" alt="Exploring our correlation matrix">
 
@@ -63,10 +63,10 @@ We can plot these factors against the average *R* rate since the start of the ou
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/RGraphs.png" alt="R Rate pairplots">
 
 
-Factors effecting our *R* rate seem to include population density, rurality, labour face, and interesting ethnicity. Let's explore that last factor further:
+Factors effecting our *R* rate seem to include population density, rurality, labour face, and interestingly ethnicity. Let's explore that last factor further:
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/EthnicityGraphs.png" alt="Ethnicity pairplots">
 
-We now see that ethnic minorities tend to live in areas which are more densley populated, likley leading to the false correlation here.
+We now see that ethnic minorities tend to live in areas which are more densely populated, likely leading to the false correlation here.
 
 Since population density seems to be important, let's compare this with the average R rate in each location since the start of the outbreak:
 
@@ -82,7 +82,7 @@ Various machine learning models were explored, and deep learning proved to be ve
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/NeuralNetworks.png" alt="Neural Network structure (representation)">
 
-Using keras with a tensorflow backend, we can quickly impliment a recurrent neural network:
+Using keras with a tensorflow backend, we can quickly implement a recurrent neural network:
 
 ```python
 # Modules
@@ -109,7 +109,7 @@ We pass our training data through the networks, and measure the loss (a measure 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/NetworkTraining.PNG" alt="Network training">
 
-We see the loss decreasing each training iteration; our neural networks are learning trends in our data! Training showed our most complex network performed best, so we will use this for our predictions. We can now use the information we have on the counties to forcast how COVID-19 may spread in the future with our trained model:
+We see the loss decreasing each training iteration; our neural networks are learning trends in our data! Training showed our most complex network performed best, so we will use this for our predictions. We can now use the information we have on the counties to forecast how COVID-19 may spread in the future with our trained model:
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/NetworkPredictions.gif" alt="Final model predictions">
 
