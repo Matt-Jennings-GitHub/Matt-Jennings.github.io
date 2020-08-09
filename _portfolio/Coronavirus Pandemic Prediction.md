@@ -9,13 +9,12 @@ excerpt: "End-to-end Machine Learning Project"
 mathjax: true
 ---
 
-Predicting and understanding the spread of the COVID-19 Pandemic in the USA can help forcast supply chains and save jobs and lives.
+Predicting and understanding the spread of the COVID-19 Pandemic in the USA can help forecast supply chains and save jobs and lives.
 
 ## Predictions made
 
 The past reproduction number is first calculated using estimates based on the SIRf pandemic model. Geographic, Socioeconomic and Health factors from individual counties are sourced and analysed from USA government datasets. These factors are used in machine learning models to predict the spread of the virus. The final results are visualised geographically: 
 
-Prediction: 		Reality:
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/PredictionsComparison.gif" alt="Model Predictions">
 
 ## Data Visualisation
@@ -71,7 +70,6 @@ We now see that ethnic minorities tend to live in areas which are more densley p
 
 Since population density seems to be important, let's compare this with the average R rate in each location since the start of the outbreak:
 
-Population Density: 		Average daily R since outbreak:
 <img src="{{ site.url }}{{ site.baseurl }}/images/CoronavirusPrediction/PopulationDensityComparison.png" alt="Population density comparison">
 
 This shows a very strong relationship indeed! These methods allow us to explore interesting relationships and select which factors are important and should be used in our machine learning models to make future predictions.

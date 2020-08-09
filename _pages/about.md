@@ -5,4 +5,4 @@ header:
   image: "/images/skyline.jpg"
 ---
 
-Passionate about data science, visualization and machine learning.  
+With experience and passion for Data Science, AI and Machine Learning - I enjoy solving complex problems as part of a team.
